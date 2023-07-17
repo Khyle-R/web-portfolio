@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+			rel="stylesheet" 
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+			crossorigin="anonymous"
+		>
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="./style.css">
+		<link rel="icon" type="image/x-icon" href="./resources/images/tmb.png">
+
+		<title>Khyle Portfolio</title>
+
+	</head>
+
+<!-- =================================================================================================================================== -->
+	
+	<body>
+		<header>
+		<!----------------------------- NavBar starts Here ------------------------------------------>
+
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top pb-lg-1 d-flex">
+			  	<div class="container">
+
+			  		<!-- Logo -->
+
+			    	<a class="navbar-brand" href="#landing">
+			    		<img src="./resources/images/logokhyle.png" class="logo">
+			    	</a>
+
+			    	<!-- Toggle Button -->
+
+			    	<button 
+			    		class="navbar-toggler shadow-none border-0" 
+			    		type="button" 
+			    		data-bs-toggle="offcanvas" 
+			    		data-bs-target="#offcanvasNavbar" 
+			    		aria-controls="offcanvasNavbar" 
+			    		aria-label="Toggle navigation"
+			    	>
+			      		<span class="navbar-toggler-icon"></span>
+			    	</button>
+			    
+			    	<!-- Sidebar -->
+
+			    	<div 
+			    		class="sidebar offcanvas offcanvas-start" 
+			    		tabindex="-1" 
+			    		id="offcanvasNavbar" 
+			    		aria-labelledby="offcanvasNavbarLabel"
+			    	>
+			    		<!----------------- Sidebar Header ------------------->
+
+				    	<div class="offcanvas-header text-white border-bottom">
+					        <a class="navbar-brand" href="#">
+			    				<img src="./resources/images/logokhyle.png" class="logo">
+			    			</a>
+					        <button 
+					        	type="button" 
+					        	class="btn-close btn-close-white shadow-none" 
+					        	data-bs-dismiss="offcanvas" 
+					        	aria-label="Close"
+					        ></button>
+				    	</div>
+
+				    	<!--------------------------- Sidebar Body ---------------------------->
+
+			      		<div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+					        <ul class="navbar-nav d-flex justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+					        	<li class="nav-item">
+					            	<a class="nav-link active mx-2 a-item" aria-current="page" href="#landing"> Home </a>
+					        	</li>
+					        	<li class="nav-item">
+					            	<a class="nav-link active mx-2 a-item" aria-current="page" href="#about-me"> About Me </a>
+					        	</li>
+					        	<li class="nav-item">
+					            	<a class="nav-link active mx-2 a-item" aria-current="page" href="#tools"> Tools </a>
+					        	</li>
+					        	<li class="nav-item">
+					            	<a class="nav-link active mx-2 a-item" aria-current="page" href="#projects"> Projects </a>
+					        	</li>
+					        </ul>
+					        <!-- Send Message -->
+					        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+					        	<a 
+					        		id="contact" 
+					        		href="#" 
+					        		class="boston px-3 py-2 rounded-5 text-decoration-none color" 
+					        		data-bs-toggle="modal" 
+					  				data-bs-target="#modal-pm"
+					  			> 
+					        		Send Email 
+					        	</a>
+					        </div>
+
+			      		</div>
+			    	</div>
+			  	</div>
+			</nav>
+		</header>
+			<!------------------------------------------------- Navbar End ------------------------------------------------->
+
+
+			<!--============================================= Landing Page Start =========================================== -->
+
+			<section class="d-flex full-height container" id="landing">
+				<div  
+					data-aos="zoom-in" 
+					data-aos-easing="linear" 
+					data-aos-duration="300"
+				>     
+
+					<h1 class="display-4 fw-bold mx-5 mx-sm-2 mx-lg-1"> Hello there! </h1>
+					<h1 class="display-4 fw-bold">I'm <span class="name"> Khyle </span></h1>
+					<h4 class="pb-4"> An Aspiring <span class="name">Full-Stack</span> Developer </h4>
+					<div class="d-flex flex-column justify-content-center align-items-center">
+					    <a href="#about-me" class="boston fw-bold px-4 py-3 rounded-5 text-decoration-none color"> 
+					    	Get Started! 
+				        </a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ============================================ About Me Start =============================================== -->
+
+			<section id="about-me" class="full-height d-flex justify-content-center align-items-center"> 
+				<div 
+					data-aos="fade-down" 
+					class="container d-flex justify-content-center"
+				>
+					
+					<div class="overflow-hidden img-fluid">
+
+						<h1 class="display-1 pb-md-3"> About <span class="name">Me</span></h1>
+
+						<img 
+							class="about img-fluid border border-3 border-white rounded float-lg-start mx-lg-5" 
+							src="./resources/images/about.jpg"
+						>
+						
+						<h5 class="test mx-md-5 mx-sm-5"> Hi! I'm Khyle Andrei T. Remolona, a passionate computer science graduate with a knack for table tennis and a love for backend development. I thrive in the world of technology, where I combine my analytical mindset and creative problem-solving skills to build robust and efficient solutions. As a backend developer during college, I enjoy diving into the complexities of databases, APIs, and algorithms to craft scalable and reliable systems.</h5>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- ****************************************** Tools Start ************************************************ -->
+
+			<section id="tools" class="full-height d-flex px-lg-5">
+				<div data-aos="fade-down">
+
+					<h1 class="display-1 col-lg-12 pb-lg-3"> Too<span class="name">ls</span></h1>
+
+					<img src="./resources/images/javascript.png" class="icon col-md-3 cl-sm-4">
+					<img src="./resources/images/python.png" class="icon col-md-3 cl-sm-4">
+					<img src="./resources/images/php.png" class="icon col-md-3 cl-sm-4">
+					<img src="./resources/images/mysql.png" class="icon col-md-3 cl-sm-4">
+					<img src="./resources/images/css.png" class="icon col-md-3 cl-sm-4">
+					<img src="./resources/images/laravel.png" class="icon col-md-3 cl-sm-4">
+					<img src="./resources/images/cakephp.png" class="icon col-md-3 cl-sm-4">
+					<img src="./resources/images/java.png" class="icon col-md-3 cl-sm-4">
+					<img src="./resources/images/html.png" class="icon col-md-3 cl-sm-4">
+					
+				</div>
+			</section>
+
+			<!-- ************************************** Tools End ************************************************* -->
+
+			<!-- ===================================     Projects    =========================================-->
+
+			<section id="projects" class="full-height d-flex justify-content-center justify-content-center">
+				<div 
+					class="container overflow-hidden" 
+					data-aos="fade-down">
+
+					<h1 class="display-1 col-lg-12 pb-lg-4 pb-md-3"> Proj<span class="name">ect</span>s</h1>
+				 	
+				 	<div class="card-group gap-1">
+					  	<div 
+					  		class="card align-items-center card-cont" 
+					  		data-bs-toggle="modal" 
+					  		data-bs-target="#modal-food"
+					  	>
+
+					    		<img src="./resources/images/food.png" class="card-img-top card-config">
+
+						    	<div class="card-body">
+						      		<h5 class="card-title">Foodea</h5>
+						      		<p class="card-text text-decoration-none"> A Food delivery application </p>
+						    	</div>
+
+					  	</div>
+
+					  	<div 
+					  		class="card align-items-center card-cont" 
+					  		data-bs-toggle="modal" 
+					  		data-bs-target="#modal-fit"
+					  	>
+
+						    	<img src="./resources/images/fit.png" class="card-img-top card-config">
+
+						    	<div class="card-body">
+						      		<h5 class="card-title">FitTracker</h5>
+						      		<p class="card-text"> An AI excersice companion</p>
+						    	</div>
+
+					  	</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ==================================       Projects End       ================================================ -->
+								
+			<!---------------------------------------------Footer--------------------------------------------------------------->
+			<footer class="">
+				<div class="d-flex align-items-center justify-content-center">
+					<a href="https://www.facebook.com/TheBIacksheep/" target="blank" class="boston px-2 py-1 rounded-2">
+						<img src="./resources/images/fb.svg" class="footer-icon">
+					</a>
+					<a href="https://www.linkedin.com/in/k-remolona/" target="blank" class="boston px-2 py-1 rounded-2">
+						<img src="./resources/images/li.svg" class="footer-icon">
+					</a>
+					<a href="https://github.com/Khyle-R" target="blank" class="boston px-2 py-1 rounded-2">
+						<img src="./resources/images/gh.svg" class="footer-icon">
+					</a>
+					
+				</div>
+				<div class="d-flex flex-column justify-content-center align-items-center">
+						<h6 >© 2023 Khyle Andrei Remolona</h1>
+					</div>
+				
+			</footer>
+
+
+
+
+
+													<!-- Scrollable modal -->
+			<!-- Foodea Modal -->
+			<div 
+				class="modal fade" 
+				id="modal-food" 
+				tabindex="-1" 
+				role="dialog" 
+				aria-labelledby="myModalLabel" 
+				aria-hidden="true"
+			>
+
+			    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+			      	<div class="modal-content">
+			       		
+			       		<!-- Modal Header -->
+			        	<div class="modal-header border-0">
+			          		<h4 class="modal-title display-6"> Foodea </h4>
+			        	</div>
+
+				        <!-- Modal Body -->
+				        <div class="modal-body">
+				          	<div class="mx-lg-5 pb-3">
+
+					        	<iframe src="https://www.youtube.com/embed/DqTEdML1kGk?autoplay=1&mute=1"> </iframe>
+					        	<h5> Description: </h5>
+
+					        	<div class="tab">
+					        		<p>Foodea is the Thesis/Capstone project me and my groupmates  made during college. Being the project manager, it was the first big project I handled and I learned a lot from it. Foodea is a food delivery application that uses machine learning tools to recommend foods based on the users preferences, activities within the app that also factors the calorie intake of the user. We implemented two A.I. models which is the collaborative and content-based system, we used reactNative for the user and rider application, laravel and bootstrap5 for the website, JawsDb for the database, AWS s3-buckets for the storage of data, Google Maps API for the tracking of delivery, and lastly heroku cloud for the deployment of the website and handling of APIs. Overall the project consists of a Website, a user application, delivery rider application and lastly a python program for the machine learning</p>
+					        	</div>
+
+					        	<h5> Github Link: </h5>
+
+					        	<a href="https://github.com/Khyle-R/Foodea_Website" class="px-3" target="blank"> Website </a>
+					        	<a href="https://github.com/Kimebarle/Foodea-1.git" class="px-3" target="blank"> UserApplication </a>
+					        	<a href="https://github.com/Kenny-eksdii/FOODEA-DRIVER" class="px-3" target="blank"> RiderApplication </a>
+					        	<a href="https://github.com/Khyle-R/foodea-recommendation-api" class="px-3" target="blank"> Recommendation </a>
+					        
+				        	</div>
+				        </div>
+
+				        <!-- Modal Footer -->
+				        <div class="modal-footer border-0">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+			      	</div>
+			    </div>
+  			</div>
+
+
+  			<!-- Fittracker Modal -->
+			<div 
+				class="modal fade" 
+				id="modal-fit" 
+				tabindex="-1" 
+				role="dialog" 
+				aria-labelledby="myModalLabel" 
+				aria-hidden="true"
+			>
+			    
+			    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+			      	<div class="modal-content">
+			       		
+			       		<!-- Modal Header -->
+			        	<div class="modal-header border-0">
+			          		<h4 class="modal-title display-6"> FitTracker </h4>
+			        	</div>
+
+				        <!-- Modal Body -->
+				        <div class="modal-body">
+				          	<div class="mx-lg-5 pb-3">
+				          		
+				          		<img src="./resources/images/fitlogo.png" class="fit">
+				          		<h5 class="mt-lg-4">Description: </h5>
+
+				          		<div class="tab">
+					            <p> FitTracker is an AI exercise companion that tracks the user's proper posture during a specific set of exercises it also count how many reps you make and plays sound cues if you accomplished the exercise properly. It uses OpenCv and pipes for the tracking of users movements and made using python.</p>
+					            </div>
+
+					            <h5>Github Link: </h5>
+					            <a href="https://github.com/Khyle-R/fitTracker" class="px-3" target="blank"> FitTracker </a>
+				          	</div>
+				        </div>
+
+				        <!-- Modal Footer -->
+				        <div class="modal-footer border-0">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+			      	</div>
+			    </div>
+  			</div>
+
+			<!-- Message Modal -->
+			<div 
+				class="modal fade" 
+				id="modal-pm" 
+				tabindex="-1" 
+				role="dialog" 
+				aria-labelledby="myModalLabel" 
+				aria-hidden="true"
+			>
+			    
+			    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+			      	<div class="modal-content">
+			       		
+			       		<!-- Modal Header -->
+			        	<div class="modal-header border-0">
+			          		<h4 class="modal-title display-6"> Send a Message </h4>
+			        	</div>
+
+				        <!-- Modal Body -->
+				        <div class="modal-body">
+				          	<div class="mx-lg-5 pb-3">
+				          		
+				          		<div class="mb-3">
+									<label for="exampleFormControlInput1" class="form-label"> Email address </label>
+								  <input type="email" class="form-control" id="" placeholder="name@example.com">
+								</div>
+
+								<div class="mb-3">
+									<label for="exampleFormControlInput2" class="form-label"> Subject </label>
+								  <input type="text" class="form-control" id="" placeholder="ex. Job offer">
+								</div>
+								
+								<div class="mb-3">
+								  <label for="exampleFormControlTextarea1" class="form-label"> Message </label>
+								  <textarea class="form-control" id="" rows="4"></textarea>
+								</div>
+				          		
+
+				          	</div>
+				        </div>
+
+				        <!-- Modal Footer -->
+				        <div class="modal-footer border-0 d-flex">
+
+				        	<div class="container align-items-center d-flex justify-content-start mx-lg-4">
+								<a href="https://www.facebook.com/TheBIacksheep/" target="blank" class="boston px-2 py-1 rounded-2">
+									<img src="./resources/images/fb.svg" class="footer-icon">
+								</a>
+								<a href="https://www.linkedin.com/in/k-remolona/" target="blank" class="boston px-2 py-1 rounded-2">
+									<img src="./resources/images/li.svg" class="footer-icon">
+								</a>
+								<a href="https://github.com/Khyle-R" target="blank" class="boston px-2 py-1 rounded-2">
+									<img src="./resources/images/gh.svg" class="footer-icon">
+								</a>
+
+								<div class="container d-flex justify-content-end">
+									<button type="button" class="btn btn-secondary bs" data-bs-dismiss="modal"> Close</button>
+									<button type="submit" class="btn btn-primary" data-bs-dismiss="modal"> Submit </button>
+								</div>
+							</div>
+						</div>
+			      	</div>
+			    </div>
+  			</div>
+							
+			<!-- ********************************************************************************************************* -->
+	
+
+		<!-- Scripts -->
+
+		<script 
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		
+		<script>
+			AOS.init();
+		</script>
+
+		<script>
+			const navEl = document.querySelector('.navbar');
+
+			window.addEventListener('scroll', () => {
+				if (window.scrollY >= 250) {
+					navEl.classList.add('navbar-scrolled');
+				} else {
+					navEl.classList.remove('navbar-scrolled');
+				}
+			});
+		</script>
+	</body>
+</html>
